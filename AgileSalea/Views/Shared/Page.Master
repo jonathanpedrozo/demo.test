@@ -138,7 +138,7 @@
 <div class="widget widget-image" id="widget-leftad-1">
 	<div class="widget-content">
 								
-		<img src="http://cdn.shopify.com/s/files/1/0090/9922/t/5/assets/leftcol-ad-1.jpg?16" alt="" />
+		<img src="../../Content/images/ads/left-corner-ads/ad-1.jpg" alt="" />
 								
 	</div>
 </div><!-- /.widget -->
@@ -149,7 +149,7 @@
 <div class="widget widget-image" id="widget-leftad-2">
 	<div class="widget-content">
 								
-		<img src="http://cdn.shopify.com/s/files/1/0090/9922/t/5/assets/leftcol-ad-2.jpg?16" alt="" />
+		<img src="../../Content/images/ads/left-corner-ads/ad-2.jpg" alt="" />
 								
 	</div>
 </div><!-- /.widget -->
@@ -160,7 +160,7 @@
 <div class="widget widget-image" id="widget-leftad-3">
 	<div class="widget-content">
 								
-		<img src="http://cdn.shopify.com/s/files/1/0090/9922/t/5/assets/leftcol-ad-3.jpg?16" alt="" />
+		<img src="../../Content/images/ads/left-corner-ads/ad-3.jpg" alt="" />
 								
 	</div>
 </div><!-- /.widget -->		
