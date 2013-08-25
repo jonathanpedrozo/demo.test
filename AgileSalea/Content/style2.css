@@ -1,0 +1,463 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+html, body
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background: #EBEBEB url('..images/sections/bg01.png') repeat;
+	font-family: Calibri, "Calibri Light";
+	font-size: 12pt;
+	font-weight: 300;
+	color: #363636;
+}
+
+h1, h2, h3
+{
+	margin: 0;
+	padding: 0;
+	color: #1c6787
+}
+
+p, ol, ul
+{
+	margin-top: 0px;
+	color: #1c6787
+}
+
+p
+{
+	line-height: 180%;
+	color: #1c6787
+}
+
+strong
+{
+}
+
+a
+{
+	color: #05598A;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+a img
+{
+	border: none;
+}
+hr
+{
+	
+	color: #b1c7c9;
+}
+
+/* Wrappers*/
+
+#wrapper {
+	background: #FFFFFF url('../images/sections/bg01.png') repeat;
+}
+#page-wrapper{
+	background: #FFFFFF url('../images/sections/bg01.png') repeat;
+	margin-right:3%;
+	margin-left: 3%;
+}
+
+.clearall
+{
+	clear: both;
+}
+
+#header-wrapper
+{
+	overflow: hidden;
+	height: 170px;
+	background-color: #FFF;
+}
+
+#header-wrapper:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/bg01.png');
+	opacity: .5;
+}
+
+#header-wrapper2
+{
+	background: #05598A;
+	box-shadow: inset 0 -10px 10px -10px rgba(0,0,0,.05);
+}
+/* Header*/
+
+#header
+{
+	position: relative;
+	height: 300px;
+	
+}
+#header-banner{
+	    height: 70px;
+		width: 105%;
+		background: url('images/banner.png');
+		background-repeat:no-repeat;
+		background-position:right;
+		background-attachment:inherit;
+}
+#header-banner ul{list-style:none; padding-left:5%;padding-top:2%;}
+#header-banner li{display: inline; padding-right: 2%; padding-left: 2%; text-decoration: none;}
+#header-banner:before{
+	background-color: Aqua;
+}
+
+/* Menu  */
+    .logo{
+		height: 100px;
+		width: 20%;
+		height:100%;
+		float: left;
+		background-image:url('../images/sections/logo.png');
+		background-repeat: no-repeat;
+	}
+	.logo h2{
+		padding-left:100px;
+		color: Silver;
+		padding-top: 30px;
+	}
+
+	#menu-wrapper
+	{
+	position:absolute;
+	padding-top: 1%;
+	padding-bottom: 2%;
+	width: 100%;
+	height: auto;
+	background-image: url('images/menu2.png');
+	/* color of meny background is #797d8f */
+	}
+	#menu-wrapper ul{list-style:none; text-decoration: none;}
+	.homeMenu{display:inline; font-weight:bold; padding-right: 2%; float: right}
+	.homeMenu a{text-decoration: none; color: Gray;}
+	.homeMenu li:hover{background-color: Silver;}
+	
+	
+#menu-wrapper ul .menu a:link, #menu-wrapper ul .menu a:visited 
+{
+    display: block;
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: 18px;
+    color: #1c6787;
+    text-align: left;
+    text-decoration: none;	
+    line-height: 100%;
+    width: 170px;       
+}
+#menu-wrapper ul .menu a:hover{
+    color:White;
+}
+.menu ul .submenu a:link, .menu ul .submenu a:visited 
+{
+    display: block;
+    z-index: 2;
+    position: relative;
+    background-image: url('images/submenu_bkg.png');
+    font-family: Calibri Light;
+    font-weight: normal;
+    font-size: 12px;
+    color: Blue;
+    text-align: center;
+    text-decoration: none;
+    padding: 2%;
+    border-bottom: 1px solid #fff;
+    width: auto;
+    height: auto;
+}
+.menu ul .submenu a:hover {
+    background-color: Silver;
+}
+.menu ul, .submenu ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;   
+}
+#menu-wrapper ul .menu {
+    float: left;
+}
+#menu-wrapper ul .menu ul .submenu {
+    float: none;
+    margin-left: 0px;
+}
+.menu ul 
+{
+    display: none;
+}
+.menu:hover ul{
+    display: block; 
+}
+/* Page   */
+#page-container{
+        position: relative;
+	    overflow: hidden;
+	    /*padding: 6em 0em 5em 0em;
+		margin: 0px auto;*/
+		margin:auto;
+		padding: auto;
+		width: 890px;
+		background-color:#cfeafa;
+		color: #1c6787;
+		
+}
+
+#page-content{
+	padding-left: 10%;
+	padding-right: 10%;
+	
+      
+}
+/* Page Titles   */
+
+	.page-title
+	{
+		margin-bottom: 3em;
+	}
+
+	.page-title h2
+	{
+		letter-spacing: 0.20em;
+		text-align: center;
+		font-family:Calibri, "Calibri Light";
+		font-weight: 300;
+		font-size: 3em;
+		color: #1c6787;
+	}
+	
+	.page-title .page-subtitle
+	{
+		letter-spacing: 0.15em;
+		text-transform: uppercase;
+		font-weight: 300;
+		font-size: 0.90em;
+		color: #6F6F6F;
+		padding-left: 30%;
+	}
+
+#productTable
+{
+	margin-left: 50%;
+	padding: auto;
+}
+.projectTable, .contactForm, .productTable{
+	margin-left:15%;
+	padding:10px;
+}
+
+.projectTable td, .contactForm td, .productTable td{
+padding: 5px;
+text-align:center;
+font-weight:bold;
+color:#006;
+background-color:#FFF;
+border-width: 1px;
+border-style: solid;
+border-color: #24588a;
+	
+	
+	}
+
+.projectTable th, .contactForm th, .productTable th{
+padding: 5px;
+font-size: 13px;
+background-color: #83aec0;
+color: #FFFFFF;
+border-width: 2px;
+border-style: solid;
+border-color: #333;
+font-family: "Trebuchet MS", Arial;
+text-transform: uppercase;
+	}
+
+
+
+/* Styles for validation helpers*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+/* Index Sales*/
+#slider-content
+{
+	height: 300px;
+	width: 100%;
+	background-image: url('images/slider_bkg3.png');
+}
+.mini-slider-content
+{
+	height: 200px;
+	width: 100%;
+	background-image: url('images/slider2_bkg.png');
+}
+.slider
+{
+	width: 670px;
+	float:left;
+	margin-top:1.8%;
+	margin-left:2%;
+	height: 250px;
+	overflow: hidden;
+}
+
+
+/* Cart section*/
+
+.cart ul
+{
+ 	display: inline;
+ 	list-style: none;
+}
+.cart a
+{
+	text-decoration: none; color: White
+}
+.cartBuble
+{
+	background-image: url('images/cart_bubble.png');
+	position: absolute;
+	left: 6	.6%;
+    top: 4%;
+    width: 20px;
+	color: White;
+	font-weight: bold;
+	text-align:center;
+}
+
+
+/* top brands*/
+
+#top-brands{background-color: White; color: #24448f}
+#top-brands ul{list-style-type: none; }
+#top-brands li{display:inline; padding: 50px;}
+
+
+/* Products*/
+.products {padding-left: 10px;}
+.products h2,h3,h4{color:#24448f ;padding-left:20px;padding-top:5px;}
+.products div {float:left; padding: 5%;}
+
+/* Invoice*/
+
+.invoice
+{
+	text-align: center;
+	border-style: none; 
+	border-color: inherit; 
+	border-width: 0; 
+	position:absolute; 
+	top: 135px; left: 592px; 
+	width: 33%; height: 211px;
+	background-color: White; 
+	}
+.invoice h2{color: Blue}
+
+#InvoiceValidationForm
+{
+	background-color:White;
+}
+#InvoiceValidationForm div
+{
+	margin-left: 20%;
+	margin-top: 3%;
+}
+#InvoiceValidationForm h2
+{
+	text-align: left;
+}
+#InvoiceValidationForm .processBubble
+{
+	background-image: url('images/process_bubble.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	font-size: large;
+	color: White;
+}
+.error
+{
+	color: Red;
+}
+
+
+/* Buttons */
+.buttonL{background-image: url('images/prev_btn.png'); background-repeat: no-repeat; margin-left: 25px; float:left; height: 250px; width:51px;}
+.buttonR{background-image: url('images/next_btn.png'); background-repeat: no-repeat; margin-right: 25px;height: 250px;float:right;width:55px; }
+.buyButton{background-image: url('images/buy_button.png'); background-repeat:no-repeat; background-position: top; text-align: center; color: White;}
+.buyButton a{color:White; text-decoration: none;}
+.payButton{background-image: url('images/pay_button.png'); background-repeat:no-repeat; background-position: top; text-align: center; color: White;}
+.payButton a{color:White; text-decoration: none;}
+.okCheck{background-image: url('images/validated_check.png'); background-repeat:no-repeat; display:none}
+
+/* Footer  */
+    #footer{
+		width: 1200px;
+		margin: 0px auto;
+	    
+	}
+	#footer-wrapper
+	{
+		overflow: hidden;
+		padding: 3em 0em 5em 0em;
+		border-top: 1px solid #D4D4D4;
+		margin-top: 10px;
+		background-color: Aqua;
+	}
+	
+	#footer p
+	{
+		letter-spacing: 0.20em;
+		text-align: center;
+		font-size: 0.90em;
+		color: Gray;
+	}
+	
+	#footer a
+	{
+		text-decoration: underline;
+		color: #0F9;
+		padding-left: 30%;
+	}
+	.icon{ background-image: url(..images/logo.ico');
+	       background-repeat: no-repeat; }

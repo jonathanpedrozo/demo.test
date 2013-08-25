@@ -1,0 +1,47 @@
+﻿<%@ 
+ Master Language="C#" 
+ CodeBehind="~/Views/Shared/Site.master.cs" 
+ Inherits="AgileSalea.Views.Shared.Site"
+  %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <%
+        string baseUrl = "http://" + Request.Url.Host + (Request.Url.Port != 80 ? ":" + Request.Url.Port.ToString() : "");
+         %>
+    <link href="http://localhost:55624/Content/style.css" rel="Stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../Content/js/init.js"></script>
+    <title> Agile Sales e-Commerce </title>
+</head>
+<body onload="Onload()">
+    <div id="wrapper">
+       <div id="header-wrapper">
+          <div id="header-banner">
+          </div>          
+            <div id="menu-wrapper">   
+    <asp:Literal ID="litHomeMenu" runat="server"></asp:Literal>             
+    <ul>
+        <asp:Literal ID="litMenu" runat="server"></asp:Literal>
+    </ul>
+      </div>​
+       </div>
+       <div id="page-wrapper">
+          <div id="page-container">
+                   <asp:ContentPlaceHolder ID="ApplicationContent" runat="server"></asp:ContentPlaceHolder>
+          </div>
+       </div>
+       <div id="footer-wrapper">
+          <div id="footer">
+          <p>Copyright: Jonathan Pedrozo - Web Designs |  <a class="icon"></a>www.jonathanpedrozo.com</p>
+          </div>
+      </div>
+    </div>
+    <p>
+        <span lang="es-ar">&nbsp;&nbsp;&nbsp; </span>
+    </p>
+</body>
+</html>

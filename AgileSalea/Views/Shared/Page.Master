@@ -1,0 +1,283 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Page.master.cs" Inherits="AgileSalea.Views.Shared.Page" %>
+
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <title>Agile Sales - Electronics</title>
+
+<link rel="stylesheet" href="http://localhost:55624/Content/global/theme-controls.css" type="text/css" />
+<link href="http://localhost:55624/Content/assets/style.css" rel="stylesheet" type="text/css"  media="all"  />  
+<link href="http://localhost:55624/Content/assets/facebook.css" rel="stylesheet" type="text/css"  media="all"  />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../Content/js/init.js"></script>
+</head>
+
+<body class=" template-index" id="welcome" onload="Onload()">
+
+  <!-- Header -->
+  <div id="header-wrapper">
+    <div id="header" class="wrapper clearfix">
+      
+       <h1 id="page-title"> 
+        <a href="/" title="Home">
+           AgileSales - Electronic e-Store        
+        </a>
+       </h1> 
+    
+      <form id="search" action="/search" method="get">
+        <label for="top-search-input" class="visuallyhidden">Search</label>
+        <input type="text" id="top-search-input" name="q" class="search-input" value="" accesskey="4" autocomplete="off" />
+        <input type="submit" class="search-submit" value="Search" />
+      </form>
+      
+    </div>
+      <!-- /#header -->
+  </div>
+    <!-- /#header-wrapper -->
+    
+    
+  <div id="main-wrapper">
+
+    <!-- Top Menu -->
+    <div id="top-menu" class="wrapper clearfix top-menu">
+      <ul id="nav">
+        
+        <li class="top current">
+          
+          
+            <a class="root" href="/">Home</a>
+          
+        </li>
+        
+        <li class="top ">
+          
+          
+            <a class="root" href="/collections/all">Catalog</a>
+          
+        </li>
+        
+
+        
+        <li class="top ">
+          
+          
+            <a class="root" href="/pages/about-us">About Us</a>
+          
+        </li>
+        
+      </ul>
+      <!-- /#nav -->
+    
+      <ul id="customer-controls">
+        
+        <li class="customer-account-links">
+          
+            <p><a href="/account/login" id="customer_login_link">Log in</a> or <a href="/account/register" id="customer_register_link">create an account</a></p>
+          
+        </li>
+             
+      
+           
+      
+        <li class="cart-link">
+          <a href="/cart" class="num-items-in-cart">
+            <span id="top-cartlink-text" class="icon">
+              
+                Your cart is empty
+              
+            </span>
+          </a>             
+        </li>
+      </ul><!-- #customer-controls -->
+    </div><!-- /#top-menu --> 
+        <!-- Main Content -->
+    <div id="main" class="wrapper clearfix">
+       <div class="content-wrapper clearfix">
+          <div class="col-content">
+           <asp:ContentPlaceHolder ID="ApplicationContent" runat="server">
+        
+           </asp:ContentPlaceHolder>
+         </div><!-- /.col-content -->  
+ <div class="col-browse">
+	
+<!-- Widget: list all collections -->
+<div class="widget widget-linklist" id="widget-allcollections">
+	<div class="widget-header">
+		<h3><a href="/collections">Product Categories</a></h3>
+	</div>
+	<div class="widget-content">
+		<ul>
+		   <asp:Literal ID="litMenu" runat="server"></asp:Literal>
+		</ul>
+	</div>		
+</div><!-- /.widget -->
+
+
+
+
+
+
+
+	
+<div id="widget-socialmedia" class="widget widget-linklist">
+  <ul>
+    <li id="sm-facebook"><a href="http://www.facebook.com">Become a fan on Facebook</a></li>
+    <li id="sm-twitter"><a href="http://www.twitter.com">Follow us on Twitter</a></li>
+    <li id="sm-youtube"><a href="http://www.youtube.com">Watch our videos on YouTube</a></li>
+    <li id="sm-flickr"><a href="http://www.flickr.com">View our photo stream on Flickr</a></li>
+    <li id="sm-pinterest"><a href="http://pinterest.com">Follow us on Pinterest</a></li>
+  </ul>
+</div>
+	
+	
+<!-- Widget: left column ad #1 -->
+<div class="widget widget-image" id="widget-leftad-1">
+	<div class="widget-content">
+								
+		<img src="http://cdn.shopify.com/s/files/1/0090/9922/t/5/assets/leftcol-ad-1.jpg?16" alt="" />
+								
+	</div>
+</div><!-- /.widget -->
+
+
+	
+<!-- Widget: left column ad #2 -->
+<div class="widget widget-image" id="widget-leftad-2">
+	<div class="widget-content">
+								
+		<img src="http://cdn.shopify.com/s/files/1/0090/9922/t/5/assets/leftcol-ad-2.jpg?16" alt="" />
+								
+	</div>
+</div><!-- /.widget -->
+
+
+	
+<!-- Widget: left column ad #3 -->
+<div class="widget widget-image" id="widget-leftad-3">
+	<div class="widget-content">
+								
+		<img src="http://cdn.shopify.com/s/files/1/0090/9922/t/5/assets/leftcol-ad-3.jpg?16" alt="" />
+								
+	</div>
+</div><!-- /.widget -->		
+
+
+
+</div><!-- /#col-browse -->
+        
+        
+      </div><!-- /.content -->
+    </div><!-- /#main -->
+  
+  </div><!-- /#main-wrapper -->
+
+
+
+  <!-- Footer -->
+  <div id="footer-wrapper">
+    <div id="footer" class="wrapper clearfix">
+            
+      <div class="join-newsletter footer-col">
+        <h3>Join our Mailing List</h3> 
+        <form method='post' action='/contact' class='contact-form' accept-charset='UTF-8'><input name='form_type' type='hidden' value='customer'/><input name="utf8" type="hidden" value="✓"> 
+        
+          
+
+          
+        
+          <input type="hidden" id="contact_tags" name="contact[tags]" value="prospect,newsletter"/>
+          <div id="newsletter-signup">
+            <input type="hidden" id="newsletter-first-name" name="contact[first_name]" value="Subscriber" />
+            <input type="hidden" id="newsletter-last-name" name="contact[last_name]" value="Newsletter" />
+            <label for="newsletter-email">Email address:</label>
+            <input type="email" class="email" id="newsletter-email" name="contact[email]" />
+            <input type="submit" class="submit btn" value="Join" />
+          </div>
+        </form>     
+      </div>
+      
+      <div class="footer-linklists footer-col">
+        	
+<div class="footer-linklist">				
+	<h3>Footer</h3>
+	<ul>
+		
+      <li class="first">
+				<a href="/search"><span class="arrow"></span>Search</a>
+			</li>
+    
+      <li class="last">
+				<a href="/pages/about-us"><span class="arrow"></span>About Us</a>
+			</li>
+    	
+	</ul>
+</div>
+       
+        	
+<div class="footer-linklist">				
+	<h3>Footer</h3>
+	<ul>
+		
+      <li class="first">
+				<a href="/search"><span class="arrow"></span>Search</a>
+			</li>
+    
+      <li class="last">
+				<a href="/pages/about-us"><span class="arrow"></span>About Us</a>
+			</li>
+    	
+	</ul>
+</div>
+       
+        	
+<div class="footer-linklist">				
+	<h3>Footer</h3>
+	<ul>
+		
+      <li class="first">
+				<a href="/search"><span class="arrow"></span>Search</a>
+			</li>
+    
+      <li class="last">
+				<a href="/pages/about-us"><span class="arrow"></span>About Us</a>
+			</li>
+    	
+	</ul>
+</div>
+                 
+      </div>      
+      
+      <div class="footer-text footer-col">
+        <p>Copyright Jonathan Pedrozo, 2013. 
+<br />
+			Project In progress</p>
+        <p class="poweredby"><a href="http://jonathanpedrozo.com" target="_blank">Jonathan Pedrozo Development</a></p>        
+      </div>
+
+    
+    <div id="footer-payment-methods">
+      <p>Payment methods we accept</p>
+             <img src="http://cdn.shopify.com/s/files/1/0090/9922/t/5/assets/cc-amex.png?16" alt="" /> 
+         <img src="http://cdn.shopify.com/s/files/1/0090/9922/t/5/assets/cc-discover.png?16" alt="" /> 
+             <img src="http://cdn.shopify.com/s/files/1/0090/9922/t/5/assets/cc-visa.png?16" alt="" />      
+       <img src="http://cdn.shopify.com/s/files/1/0090/9922/t/5/assets/cc-mastercard.png?16" alt="" />      
+          <img src="http://cdn.shopify.com/s/files/1/0090/9922/t/5/assets/cc-maestro.png?16" alt="" /> 
+           <img src="http://cdn.shopify.com/s/files/1/0090/9922/t/5/assets/cc-cirrus.png?16" alt="" />  
+           <img src="http://cdn.shopify.com/s/files/1/0090/9922/t/5/assets/cc-paypal.png?16" alt="" /> 
+           <img src="http://cdn.shopify.com/s/files/1/0090/9922/t/5/assets/cc-google.png?16" alt="" />      
+    </div>
+    
+
+
+    
+    </div><!-- /#footer -->
+  </div><!-- /#footer-wrapper -->
+  
+  
+    
+</body>
+</html>

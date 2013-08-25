@@ -1,0 +1,5 @@
+C:\Users\Jonathon\Documents\Visual Studio 2008\Projects\AgileSalea\AgileSalea\bin\AgileSalea.dll
+C:\Users\Jonathon\Documents\Visual Studio 2008\Projects\AgileSalea\AgileSalea\bin\AgileSalea.pdb
+C:\Users\Jonathon\Documents\Visual Studio 2008\Projects\AgileSalea\AgileSalea\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jonathon\Documents\Visual Studio 2008\Projects\AgileSalea\AgileSalea\obj\Debug\AgileSalea.dll
+C:\Users\Jonathon\Documents\Visual Studio 2008\Projects\AgileSalea\AgileSalea\obj\Debug\AgileSalea.pdb
